@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+
+<body>
+    <div class="announcement-bar">
+        NEW CUSTOMERS SAVE 10% WITH THE CODE GET10
+    </div>
+    <nav class="navbar">
+        <a href="#" class="logo">Anvogue</a>
+
+        <ul class="nav-links">
+            <li><a href="#">DEMO</a></li>
+            <li><a href="#">FEATURES</a></li>
+            <li><a href="#">SHOP</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">PAGES</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="icon-button">
+                <i class="fas fa-search"></i>
+            </button>
+            <button class="icon-button">
+                <i class="far fa-user"></i>
+            </button>
+            <button class="icon-button">
+                <i class="far fa-heart"></i>
+                <span class="badge">0</span>
+            </button>
+            <button class="icon-button">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge">0</span>
+            </button>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="collection-tag">SUMMER COLLECTION</div>
+            <h1 class="hero-title">Fall - Winter Collections 2030</h1>
+            <p class="hero-description">A specialist label creating luxury essentials. Ethically crafted with an
+                unwavering commitment to exceptional quality.</p>
+            <a href="#" class="shop-now-btn">
+                SHOP NOW
+                <i class="fas fa-arrow-right" style="margin-left: 10px;"></i>
+            </a>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="hero-nav">
+            <button><i class="fas fa-arrow-left"></i></button>
+            <button><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <section class="product-showcase">
+        <div class="showcase-header">
+            <h2 class="showcase-title">Awesome</h2>
+            <div class="navigation-buttons">
+                <button class="nav-button">Next</button>
+                <span>|</span>
+                <button class="nav-button">Previous</button>
+            </div>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'images/product_2.png' %}" alt="Green Chair">
+                </div>
+                <h3 class="product-title">Quartz Belt Watch</h3>
+                <div class="product-price">$150.00</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'images/product_2.png' %}" alt="Orange Chair">
+                </div>
+                <h3 class="product-title">Quartz Belt Watch</h3>
+                <div class="product-price">$150.00</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'images/product_2.png' %}" alt="Yellow Chair">
+                </div>
+                <h3 class="product-title">Quartz Belt Watch</h3>
+                <div class="product-price">$150.00</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="{% static 'images/product_2.png' %}" alt="Patterned Chair">
+                </div>
+                <h3 class="product-title">Quartz Belt Watch</h3>
+                <div class="product-price">$150.00</div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-headset"></i>
+                </div>
+                <h3 class="feature-title">24/7 Customer Service</h3>
+                <p class="feature-description">We're here to help you with any questions or concerns you have, 24/7.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-undo"></i>
+                </div>
+                <h3 class="feature-title">14-Day Money Back</h3>
+                <p class="feature-description">If you're not satisfied with your purchase, simply return it within 14
+                    days for a refund.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fa-solid fa-award"></i>
+                </div>
+                <h3 class="feature-title">Our Guarantee</h3>
+                <p class="feature-description">We stand behind our products and services and guarantee your
+                    satisfaction.</p>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3 class="feature-title">Shipping Worldwide</h3>
+                <p class="feature-description">We ship our products worldwide, making them accessible to customers
+                    everywhere.</p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2 class="testimonials-title">What People Are Saying</h2>
+        <div class="testimonials-slider">
+            <div class="testimonials-track">
+                <!-- First Slide -->
+                <div class="testimonials-slide">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <h3 class="testimonial-title">Variety Of Styles!</h3>
+                        <p class="testimonial-text">"Fantastic shop! Great selection, fair prices, and friendly staff.
+                            Highly recommended. The quality of the products is exceptional, and the prices are very
+                            reasonable!"</p>
+                        <div class="testimonial-author">Lisa K.</div>
+                        <div class="testimonial-date">August 13, 2024</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <h3 class="testimonial-title">Quality Of Clothing!</h3>
+                        <p class="testimonial-text">"Anvouge's fashion collection is a game-changer! Their unique and
+                            trendy pieces have completely transformed my style. It's comfortable, stylish, and always
+                            on-trend."</p>
+                        <div class="testimonial-author">Elizabeth A.</div>
+                        <div class="testimonial-date">August 13, 2024</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <h3 class="testimonial-title">Customer Service!</h3>
+                        <p class="testimonial-text">"I absolutely love this shop! The products are high-quality and the
+                            customer service is excellent. I always leave with exactly what I need and a smile on my
+                            face."</p>
+                        <div class="testimonial-author">Christin H.</div>
+                        <div class="testimonial-date">August 13, 2024</div>
+                    </div>
+                </div>
+
+                <!-- Second Slide -->
+                <div class="testimonials-slide">
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <h3 class="testimonial-title">Amazing Experience!</h3>
+                        <p class="testimonial-text">"Shopping at Anvouge has been an absolute pleasure. The attention to
+                            detail in their clothing and the exceptional service make it my go-to fashion destination."
+                        </p>
+                        <div class="testimonial-author">Michael R.</div>
+                        <div class="testimonial-date">August 14, 2024</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <h3 class="testimonial-title">Perfect Fit!</h3>
+                        <p class="testimonial-text">"The quality and fit of their clothing is outstanding. Every piece
+                            I've purchased has become a wardrobe favorite. Their sizing is consistent and reliable."</p>
+                        <div class="testimonial-author">Sarah M.</div>
+                        <div class="testimonial-date">August 14, 2024</div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="stars">★★★★★</div>
+                        <h3 class="testimonial-title">Fast Shipping!</h3>
+                        <p class="testimonial-text">"Not only is the clothing amazing, but the shipping is incredibly
+                            fast. I received my order within days, and everything was perfectly packaged."</p>
+                        <div class="testimonial-author">James L.</div>
+                        <div class="testimonial-date">August 14, 2024</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-nav">
+                <button class="slider-button prev-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="slider-button next-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <button class="return-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <footer class="anv-footer">
+        <div class="anv-footer-container">
+            <div class="anv-brand">
+                <h2>Anvogue</h2>
+                <div class="anv-contact-info">
+                    <p>Mail: hi.avitex@gmail.com</p>
+                    <p>Phone: 1-333-345-6868</p>
+                    <p>Address: 549 Oak St.Crystal Lake, IL 60014</p>
+                </div>
+            </div>
+
+            <div class="anv-footer-section">
+                <h3>INFORMATION</h3>
+                <ul class="anv-footer-links">
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Order & Returns</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+
+            <!-- <div class="anv-footer-section">
+                <h3>QUICK SHOP</h3>
+                <ul class="anv-footer-links">
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Clothes</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div> -->
+
+            <div class="anv-footer-section">
+                <h3>CUSTOMER SERVICES</h3>
+                <ul class="anv-footer-links">
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return & Refund</a></li>
+                </ul>
+            </div>
+
+            <div class="anv-footer-section">
+                <h3>NEWSLETTER</h3>
+                <p>Sign up for our newsletter and get 10% off your first purchase</p>
+                <div class="anv-newsletter">
+                    <form id="anv-newsletter-form" class="anv-email-form">
+                        <input type="email" class="anv-email-input" placeholder="Enter your e-mail">
+                        <button type="submit" class="anv-submit-btn">→</button>
+                    </form>
+                </div>
+                <div class="anv-social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="lincense">
+        <p>All rights reserved by ❤️ <a href="#">Developer Soceity</a></p>
+    </section>
+    <script src="{% static 'js/home.js' %}"></script>
+</body>
+
+</html>
